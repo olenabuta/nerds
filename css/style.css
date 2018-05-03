@@ -36,7 +36,7 @@ input[type="radio"].visually-hidden {
 	white-space: nowrap;
 
 	clip-path: inset(100%);
-	clip: rect(0 0 0 0);
+	clip: rect(0, 0, 0, 0);
 	overflow: hidden;
 }
 
@@ -235,7 +235,6 @@ input[type="radio"].visually-hidden {
 .slider-item {
 	position: relative;
 	display: none;
-	-ms-align-items: center;
 	align-items: center;
 	justify-content: flex-start;
 		transition-duration: 0.6s;
@@ -356,7 +355,7 @@ input[type="radio"].visually-hidden {
 .service-button-2:active {
 	color: rgba(255, 255, 255, 0.3);
 	background-color: #00aa62;
-	box-shadow: inset 0 3 0 rgba(0, 0, 0, 0.1);
+	box-shadow: inset 0 3px 0 rgba(0, 0, 0, 0.1);
 } 
 
 .service-button-3 {
@@ -374,7 +373,7 @@ input[type="radio"].visually-hidden {
 .service-button-3:active {
 	color: rgba(255, 255, 255, 0.3);
 	background-color: #e5a722;
-	box-shadow: inset 0 3 0 rgba(0, 0, 0, 0.1);
+	box-shadow: inset 0 3px 0 rgba(0, 0, 0, 0.1);
 } 
 
 .about-us {
@@ -495,7 +494,6 @@ input[type="radio"].visually-hidden {
 
 	display: flex;
 	justify-content: center;
-	-ms-align-items: center;
 	align-items: center;
 	width: 260px;
 	height: 180px;
@@ -560,7 +558,8 @@ input[type="radio"].visually-hidden {
 	position: absolute;
 	top: 0;
 	left: 0;
-
+	
+	border-width: 0;
 	z-index: 20;
 }
 
@@ -813,10 +812,9 @@ input[type="radio"].visually-hidden {
 	border-radius: 2px;
 }
 
-
 .modal-write input::placeholder,
 .modal-write textarea::placeholder {
-	color: #rgba(68, 68, 68, 0.5);
+	color: rgba(68, 68, 68, 0.5);
 }
 
 .modal-write input:hover,
@@ -1044,8 +1042,6 @@ input[type="radio"].visually-hidden {
   background-repeat: no-repeat;
   cursor: pointer;
 
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 
@@ -1058,11 +1054,7 @@ input[type="radio"].visually-hidden {
 }
 
 .range-inputs {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
@@ -1073,7 +1065,6 @@ input[type="radio"].visually-hidden {
 }
 
 .range-input {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 80px;
   margin-left: 8px;
@@ -1083,9 +1074,6 @@ input[type="radio"].visually-hidden {
   line-height: 22px;
   text-align: center;
 
-  -webkit-appearance: textfield;
-  -moz-appearance: textfield;
-  appearance: textfield;
   background-color: #eeeeee;
   border: none;
   border-radius: 3px;
@@ -1094,8 +1082,6 @@ input[type="radio"].visually-hidden {
 .range-input::-webkit-inner-spin-button,
 .range-input::-webkit-outer-spin-button {
   margin: 0;
-
-  -webkit-appearance: none;
   appearance: none;
 }
 
